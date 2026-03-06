@@ -151,95 +151,110 @@ document.querySelector('.top a').addEventListener('click', (e) =>{
 });
 
 // =================== CARROSEL DE PROJETOS ========================
-// Seleciona os elementos do carrossel
+//Seleciona os elementos de carrossel
 const carouselSlides = document.querySelector('.carousel-slides');
 const slides = document.querySelectorAll('.carousel-slide');
 const prevButton = document.querySelector('.carousel-button.prev');
 const nextButton = document.querySelector('.carousel-button.next');
-let currentSlide = 0;
+let currentSlide = 0
 let autoSlideInterval;
 
-// Função para exibir o slide atual
-function showSlide(slideIndex) {
+//Função para exibir o slide atual
+function showSlide(slideIndex){
     slides.forEach(slide => {
         slide.classList.remove('active');
         slide.style.display = 'none';
     });
 
-    // Ajusta o índicedo slide para garantir que ele esteja dentro dos limites
-    if (slideIndex < 0) currentSlide = slides.lenght - 1;
+    //Ajusta o índice do slide para garantir que ele esteja dentro dos limites
+    if (slideIndex < 0) currentSlide = slides.length - 1;
     else if (slideIndex >= slides.length) currentSlide = 0;
     else currentSlide = slideIndex;
 
-    // Exibe o slide atual
+    //Exibe o slide atual
     slides[currentSlide].classList.add('active');
     slides[currentSlide].style.display = 'flex';
     updateSlidePosition();
 }
 
-// Função para atualizar a posição do carrossel
+//Função para atualizar a posição do carrossel
 function updateSlidePosition() {
     const slideWidth = slides[0].offsetWidth;
     carouselSlides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 }
 
-// Função para avançar para o próximo slide
+//Função para avançar para o próximo slide
 function nextSlide() {
     showSlide(currentSlide + 1);
-    resetAutoSlide(); // Reinicia o intervalo de transição automática
+    resetAutoSlide();//Reinicia o intervalo de transição automática
 }
 
-// Função para voltar ao slide anterior
+//Função para voltar ao slide anterior
 function prevSlide() {
     showSlide(currentSlide - 1);
-    resetAutoSlide(); // Reinicia o intervalo de transição automática
+    resetAutoSlide();//Reinicia o intervalo de transição automática
 }
 
-// Função para iniciar a transição automática dos slides
+//Função para iniciar a transição automática dos slides 
 function startAutoSlide() {
-    autoSlideInterval = setInterval(nextSlide, 5000); // Avança o slide a cada 5 segundos
+    autoSlideInterval = setInterval(nextSlide, 5000); //Avança o slide a cada 5 segundos
 }
 
-// Função para reiniciar a transição automática
+//Função para reiniciar a transição automática 
 function resetAutoSlide() {
     clearInterval(autoSlideInterval);
     startAutoSlide();
 }
 
-// Adiciona eventos de clique aos botões de navegação do carrosel
-nextButton.addEventListener('click', nextSlide);
-prevButton.addEventListener('click', prevSlide);
+    //Adiciona eventos de clique aos botões de navegação do carrossel
+    nextButton.addEventListener('click', nextSlide);
+    prevButton.addEventListener('click', prevSlide);
 
-// Inicializa o carrossel ao carregar a página
-window.addEventListener('load', () => {
-    showSlide(currentSlide);
-    startAutoSlide();
+    //Inicializa o carrossel ao carregar a página
+    window.addEventListener('load', () => {
+        showSlide(currentSlide);
+        startAutoSlide();
 
-    // Atualiza a posição do carrossel ao redimensionar a janela
-    window.addEventListener('resize', () => {
+    //Atualiza a posição do carrossel ao redimensionar a janela
+    window.addEventListener('load', () => {
         updateSlidePosition();
     });
 });
 
-// Pausa a transição automática ao passar o mouse sobre o carrossel
+//Pausa a transição automática ao passar o mouse sobre o carrossel
 carouselSlides.parentElement.addEventListener('mouseenter', () => {
     clearInterval(autoSlideInterval);
 });
 
-// Retoma a transição automática ao remover o mouse do carrossel
+//Retoma a trasição automática ao remover o mouse do carrossel
 carouselSlides.parentElement.addEventListener('mouseleave', startAutoSlide);
 
-// =========================== FORMULÁRIO DE CONTATO ============================
-// Seleciona o formulário de contato e a mensagem de agradecimento
-const contactFrom = document.getElementById('contactFrom');
+//=================== FORMULÁRIO DE CONTATO ===============================
+//Seleciona o formulário de contato e a mensagem de agradecimento
+const contactForm = document.getElementById('contactForm');
 const thankYouMessage = document.getElementById('thankYouMessage');
 
-// Adiciona um evento de envio ao formulário
-contactFrom.addEventListener('submit', (e) => {
+//Adiciona um evento de envio ao formulário
+contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    thankYouMessage.style.display = 'block'; //Exibe a mensagem de agradecimento
 
-})
+    //Envia os dados do formulário usando Fetch APT
+    const formData = new FormData(contactForm);
+    fetch(contactForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: {'Accept' : 'application/json' }
+    })
 
-
-
+    .then(response => {
+        if (response.ok){
+            setTimeout(() => window.location.reload(), 2000); //Recarrega a página após 2 segundos
+        } else {
+            alert('Erro ao enviar formulário. Tente Novamente.');
+        }
+    })
+    .catch(() => alert('Erro na conexão. Tente Novamente.'));
+});
 
 

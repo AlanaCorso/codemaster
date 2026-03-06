@@ -24,7 +24,7 @@ Com a conclusão das interações o site erstá pronto para uso.
 ○ [X] 6. Animação das seções  
 ○ [X] 7. Botão de voltar ao topo  
 ○ [X] 8. Carrossel de projetos  
-○ [] 9. Formulário com API  
+○ [X] 9. Formulário com API  
 ○ [ ] 10. Animação de Scroll  
 
 ---
