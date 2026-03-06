@@ -16,8 +16,8 @@ Através do JavaScript, o site terá interações como: controlar o menu mobile;
 Com a conclusão das interações o site erstá pronto para uso.
 
 **Lista de tarefas**  
-○ [ ] 1. Menu Mobile  
-○ [ ] 2. Links Ativos  
+○ [X] 1. Menu Mobile  
+○ [X] 2. Links Ativos  
 ○ [ ] 3. Alternar modo claro/escuro  
 ○ [ ] 4. Animação do título  
 ○ [ ] 5. Animação da seção "home"  

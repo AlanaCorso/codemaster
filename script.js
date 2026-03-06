@@ -28,3 +28,16 @@ document.querySelectorAll('.navlist a').forEach(link => {
         }
     });
 
+// =================== NAVEGAÇÃO ATIVA ==========================
+// Seleciona todos os links de navegação
+const navLinks = document.querySelectorAll('.navlist a');
+
+// Função para adicionar a class "active" ao link criado
+function activeLink() {
+    navLinks.forEach(item => item.classList.remove('active')); // Remove a classe "active" de todos os links
+    this.classList.add('active'); //Adiciona a classe "active" ao link criado
+}
+
+// Adiciona um evento de cique a cada link de navegação
+navLinks.forEach(item => item,addEventListener('click', activeLink));
+
