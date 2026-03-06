@@ -20,7 +20,7 @@ Com a conclusão das interações o site erstá pronto para uso.
 ○ [X] 2. Links Ativos  
 ○ [X] 3. Alternar modo claro/escuro  
 ○ [X] 4. Animação do título  
-○ [ ] 5. Animação da seção "home"  
+○ [X] 5. Animação da seção "home"  
 ○ [ ] 6. Animação das seções  
 ○ [ ] 7. Botão de voltar ao topo  
 ○ [ ] 8. Carrossel de projetos  
