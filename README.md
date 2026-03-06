@@ -18,7 +18,7 @@ Com a conclusão das interações o site erstá pronto para uso.
 **Lista de tarefas**  
 ○ [X] 1. Menu Mobile  
 ○ [X] 2. Links Ativos  
-○ [ ] 3. Alternar modo claro/escuro  
+○ [X] 3. Alternar modo claro/escuro  
 ○ [ ] 4. Animação do título  
 ○ [ ] 5. Animação da seção "home"  
 ○ [ ] 6. Animação das seções  
