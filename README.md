@@ -1,17 +1,17 @@
 <p align="center">
-  <img src="../codemaster/img/Captura de tela 2026-03-06 153916.png" alt="Preview da Aula de js-base" width="100%">
+  <img src="../codemaster/Captura de tela 2026-03-06 153916.png" alt="Preview da Aula de js-base" width="100%">
 </p>
 <p align="center">
-  <img src="../codemaster/img/Captura de tela 2026-03-06 154355.png" alt="Preview da Aula de js-base" width="100%">
+  <img src="../codemaster/Captura de tela 2026-03-06 154355.png" alt="Preview da Aula de js-base" width="100%">
 </p>
 <p align="center">
-  <img src="../codemaster/img/Captura de tela 2026-03-06 154422.png" alt="Preview da Aula de js-base" width="100%">
+  <img src="../codemaster/Captura de tela 2026-03-06 154422.png" alt="Preview da Aula de js-base" width="100%">
 </p>
 <p align="center">
-  <img src="../codemaster/img/Captura de tela 2026-03-06 154448.png" alt="Preview da Aula de js-base" width="100%">
+  <img src="../codemaster/Captura de tela 2026-03-06 154448.png" alt="Preview da Aula de js-base" width="100%">
 </p>
 <p align="center">
-  <img src="../codemaster/img/Captura de tela 2026-03-06 154504.png" alt="Preview da Aula de js-base" width="100%">
+  <img src="../codemaster/Captura de tela 2026-03-06 154504.png" alt="Preview da Aula de js-base" width="100%">
 </p>
 
 ## 💻 Sobre o CodeMaster
