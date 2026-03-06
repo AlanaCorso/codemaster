@@ -189,6 +189,12 @@ function nextSlide() {
     resetAutoSlide(); // Reinicia o intervalo de transição automática
 }
 
+// Função para voltar ao slide anterior
+function prevSlide() {
+    showSlide(currentSlide - 1);
+    resetAutoSlide(); // Reinicia o intervalo de transição automática
+}
+
 // Função para iniciar a transição automática dos slides
 function startAutoSlide() {
     autoSlideInterval = setInterval(nextSlide, 5000); // Avança o slide a cada 5 segundos
@@ -222,6 +228,16 @@ carouselSlides.parentElement.addEventListener('mouseenter', () => {
 
 // Retoma a transição automática ao remover o mouse do carrossel
 carouselSlides.parentElement.addEventListener('mouseleave', startAutoSlide);
+
+// =========================== FORMULÁRIO DE CONTATO ============================
+// Seleciona o formulário de contato e a mensagem de agradecimento
+const contactFrom = document.getElementById('contactFrom');
+const thankYouMessage = document.getElementById('thankYouMessage');
+
+// Adiciona um evento de envio ao formulário
+contactFrom.addEventListener('submit', (e) => {
+
+})
 
 
 
