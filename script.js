@@ -79,8 +79,8 @@ function animateText() {
             isTyping = false; //Alterna para o modo de apagamento
         }
     } else {
-        if (index < 1) {
-            titleElement = text.slice(0, index - 1); // Remove uma letra ao título
+        if (index > 1) {
+            titleElement.textContent = text.slice(0, index - 1); // Remove uma letra ao título
             index--;
         } else {
             isTyping = true; //Alterna para o modo de apagamento
@@ -113,4 +113,33 @@ setTimeout(() => {
     homeSection.style.opacity = '1';
     homeSection.style.transform = 'translateY(0)';
 }, 100);
+
+// ===================== ANIMAÇÃO SA SEÇÕES =======================
+// Seleciona todas as seções e aplica animações de entrada
+const sections = document.querySelectorAll('section');
+
+sections.forEach((section, index) => {
+    section.style.opacity = '0';
+    section.style.transition = 'opacity1s, transform 1s';
+
+    // Aplica diferentes transformações em base no índice da seção
+    if (index !== 0) {
+        if (index === 1) section.style.transform = 'translateY(100px)';
+        else if (index === 2) section.style.transform = 'scale(0.8)';
+        else if (index === 3) section.style.transform = 'rotateY(90deg)';
+    }
+});
+
+// Observer para animar as seções ao rolar a página
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'none';
+    })
+});
+
+// Observa cada seção para aplicar a animação
+section.forEach((section) => observer.observe(section));
+
+
 
