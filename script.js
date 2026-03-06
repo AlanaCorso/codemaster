@@ -1,6 +1,6 @@
 // ================== CONTROLE DO MENU MOBILE ==============================
 const menuIcon = document.querySelector('#menu-icon');
-const navList = document.querySelector('.navList');
+const navList = document.querySelector('.navlist');
 
 menuIcon.addEventListener('click', () => {
     menuIcon.classList.toggle('bx-x');
@@ -114,7 +114,7 @@ setTimeout(() => {
     homeSection.style.transform = 'translateY(0)';
 }, 100);
 
-// ===================== ANIMAÇÃO SA SEÇÕES =======================
+// ===================== ANIMAÇÃO DAsS SEÇÕES =======================
 // Seleciona todas as seções e aplica animações de entrada
 const sections = document.querySelectorAll('section');
 
@@ -156,7 +156,7 @@ const carouselSlides = document.querySelector('.carousel-slides');
 const slides = document.querySelectorAll('.carousel-slide');
 const prevButton = document.querySelector('.carousel-button.prev');
 const nextButton = document.querySelector('.carousel-button.next');
-let currentSlide = 0
+let currentSlide = 0;
 let autoSlideInterval;
 
 //Função para exibir o slide atual

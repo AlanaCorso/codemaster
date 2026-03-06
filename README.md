@@ -1,5 +1,17 @@
 <p align="center">
-  <img src="JavaScript Introducao.pdf" alt="Preview da Aula de js-base" width="100%">
+  <img src="../codemaster/img/Captura de tela 2026-03-06 153916.png" alt="Preview da Aula de js-base" width="100%">
+</p>
+<p align="center">
+  <img src="../codemaster/img/Captura de tela 2026-03-06 154355.png" alt="Preview da Aula de js-base" width="100%">
+</p>
+<p align="center">
+  <img src="../codemaster/img/Captura de tela 2026-03-06 154422.png" alt="Preview da Aula de js-base" width="100%">
+</p>
+<p align="center">
+  <img src="../codemaster/img/Captura de tela 2026-03-06 154448.png" alt="Preview da Aula de js-base" width="100%">
+</p>
+<p align="center">
+  <img src="../codemaster/img/Captura de tela 2026-03-06 154504.png" alt="Preview da Aula de js-base" width="100%">
 </p>
 
 ## 💻 Sobre o CodeMaster
@@ -10,9 +22,8 @@ Este projeto foi desenvolvido como parte do currículo do curso **Técnico em De
 
 ## ❗ Estado inicial
 
-Recebi o HTML e CSS prontos. O layout renderiza perfeitamente, mas
-o menu mobile não abre bonitinho, o formulário está enviando, os links para o Linkedin e GitHub estão funcionado, a seção "sobre" está em branco.
-Através do JavaScript, o site terá interações como: controlar o menu mobile; navegação ativa; mudar modo de fundo (claro e escuro); animações (título, seções, scroll); botão de voltar ao topo; carrossel com os projetos; formulário de contato...
+Recebi o HTML e CSS prontos. O layout renderiza perfeitamente, mas o menu mobile não abre bonitinho, o formulário está enviando, os links para o Linkedin e GitHub estão funcionado, a seção "sobre" está em branco.  
+Através do JavaScript, o site terá interações como: controlar o menu mobile; navegação ativa; mudar modo de fundo (claro e escuro); animações (título, seções, scroll); botão de voltar ao topo; carrossel com os projetos; formulário de contato...  
 Com a conclusão das interações o site erstá pronto para uso.
 
 **Lista de tarefas**  
