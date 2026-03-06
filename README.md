@@ -11,7 +11,7 @@ Este projeto foi desenvolvido como parte do currículo do curso **Técnico em De
 ## ❗ Estado inicial
 
 Recebi o HTML e CSS prontos. O layout renderiza perfeitamente, mas
-o menu mobile não abre bonitinho, o formulário está enviando, os links para o Linkedin e GitHub estão funcionado.
+o menu mobile não abre bonitinho, o formulário está enviando, os links para o Linkedin e GitHub estão funcionado, a seção "sobre" está em branco.
 Através do JavaScript, o site terá interações como: controlar o menu mobile; navegação ativa; mudar modo de fundo (claro e escuro); animações (título, seções, scroll); botão de voltar ao topo; carrossel com os projetos; formulário de contato...
 Com a conclusão das interações o site erstá pronto para uso.
 
@@ -64,7 +64,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ## 📂 Estrutura de Pastas
 
 ```bash
-js-projeto/
+codemaster/
 ├──.vscode 
 ├── assets
 ├── códigos
