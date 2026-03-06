@@ -19,7 +19,7 @@ Com a conclusão das interações o site erstá pronto para uso.
 ○ [X] 1. Menu Mobile  
 ○ [X] 2. Links Ativos  
 ○ [X] 3. Alternar modo claro/escuro  
-○ [ ] 4. Animação do título  
+○ [X] 4. Animação do título  
 ○ [ ] 5. Animação da seção "home"  
 ○ [ ] 6. Animação das seções  
 ○ [ ] 7. Botão de voltar ao topo  
