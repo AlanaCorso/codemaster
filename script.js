@@ -120,7 +120,7 @@ const sections = document.querySelectorAll('section');
 
 sections.forEach((section, index) => {
     section.style.opacity = '0';
-    section.style.transition = 'opacity1s, transform 1s';
+    section.style.transition = 'opacity 1s, transform 1s';
 
     // Aplica diferentes transformações em base no índice da seção
     if (index !== 0) {
@@ -133,13 +133,24 @@ sections.forEach((section, index) => {
 // Observer para animar as seções ao rolar a página
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'none';
-    })
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'none';
+        }
+    });
 });
 
 // Observa cada seção para aplicar a animação
-section.forEach((section) => observer.observe(section));
+sections.forEach((section) => observer.observe(section));
+
+// ====================== BOTÃO DE VOLTAR AO TOPO ====================================
+// Adiciona um evento de clique ao botão de voltarao topo
+document.querySelector('.top a').addEventListener('click', (e) =>{
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth'}); // Rola suavemente para o topo da página
+});
+
+
 
 
 
